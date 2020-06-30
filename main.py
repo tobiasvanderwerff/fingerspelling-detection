@@ -56,7 +56,7 @@ if input_path.is_dir():  # Evaluation for Corpus NGT. Assumes two subfolders: s1
                       template_match_cnt, no_match_cnt, preselection_rejection_cnt, total_n_frames, eps, min_samples,
                       movement_threshold, template_match_thresh, input_path.name, template_dir.name)
 else:  # Single video
-    input_video = Video(input_path, op_output_dir, corpus_ngt=True)
+    input_video = Video(input_path, op_output_dir, corpus_ngt=False)
     detector = SegmentDetector(input_video, op_output_dir, template_dir, eps=eps, min_samples=min_samples,
                                movement_threshold=movement_threshold, template_match_thresh=template_match_thresh)
     detector.detect_segments()
