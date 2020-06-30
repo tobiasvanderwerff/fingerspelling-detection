@@ -2,7 +2,7 @@ import numpy as np
 import cv2
 import argparse
 
-""" Functions for drawing hand template_sets. """
+""" Functions for drawing hand templates. """
 
 
 def make_drawing(hand_keypoints, keypoint_confidence_threshold, size=500):
