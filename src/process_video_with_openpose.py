@@ -9,7 +9,7 @@ from src.op1 import OpenPose
 from pathlib import Path
 
 """ Process a video with OpenPose and store the results in json format for processing
-    by the fingerspelling detection pipeline."""
+    by the fingerspelling detection pipeline. Requires the OpenPose python API to run. """
 
 
 parser = argparse.ArgumentParser()
