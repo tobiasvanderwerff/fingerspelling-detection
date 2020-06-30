@@ -5,10 +5,9 @@ import cv2
 import os
 import argparse
 import numpy as np
-import draw_hand
-import util
-from pipeline import SegmentDetectionPipeline
-from op1 import OpenPose
+from src import draw_hand, util
+from src.pipeline import SegmentDetectionPipeline
+from src.op1 import OpenPose
 from pathlib import Path
 
 

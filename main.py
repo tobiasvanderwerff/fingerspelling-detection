@@ -3,8 +3,8 @@
 import argparse
 import os
 from pathlib import Path
-from segment_detection import SegmentDetector, Video
-from results_view import summarize_results, show_predicted_segments
+from src.segment_detection import SegmentDetector, Video
+from src.results_view import summarize_results, show_predicted_segments
 from collections import Counter
 
 

@@ -2,10 +2,10 @@
 
 import cv2
 import argparse
-import util
+from src import util
 import json
 import os
-from op1 import OpenPose
+from src.op1 import OpenPose
 from pathlib import Path
 
 """ Process a video with OpenPose and store the results in json format for processing

@@ -3,14 +3,14 @@
 import cv2
 import os
 import numpy as np
-import util
+from src import util
 import re
 from pathlib import Path
-from eaf_parsing import EAFParser, ms_to_frame_no
-from pipeline import SegmentDetectionPipeline
+from src.eaf_parsing import EAFParser, ms_to_frame_no
+from src.pipeline import SegmentDetectionPipeline
 from collections import Counter
 from typing import List, Tuple
-from results_view import show_video_results
+from src.results_view import show_video_results
 
 
 def precision(tp, fp):
