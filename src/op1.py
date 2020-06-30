@@ -4,7 +4,8 @@ import sys
 
 
 try:
-    sys.path.append('../../openpose/build/python');
+    # Fill in the correct OpenPose path here.
+    sys.path.append('../../openpose/build/python');  
     from openpose import pyopenpose as op
 except Exception as e:
     print(e)
