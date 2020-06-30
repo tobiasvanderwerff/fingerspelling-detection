@@ -42,7 +42,7 @@ if input_path.is_dir():  # Evaluation for Corpus NGT. Assumes two subfolders: s1
                                        min_samples=min_samples, movement_threshold=movement_threshold,
                                        template_match_thresh=template_match_thresh)
             detector.detect_segments()
-            detector.evaluate_results(eaf_annot_dir, show_results=False)
+            detector.evaluate_results(eaf_annot_dir, show_results=True)
 
             precision_per_video1[s].append(detector.results["precision1"])
             recall_per_video1[s].append(detector.results["recall1"])
